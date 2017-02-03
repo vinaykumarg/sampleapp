@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sampleapp</string>
+    <string name="title_activity_activity">activityA</string>
+    <string name="aval">a value</string>
+    <string name="bval">b value</string>
+    <string name="add">ADD</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="SampleText">sample text</string>
+</resources>
