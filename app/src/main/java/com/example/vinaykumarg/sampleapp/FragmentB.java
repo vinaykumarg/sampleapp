@@ -1,10 +1,8 @@
 package com.example.vinaykumarg.sampleapp;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ActivityB extends Fragment {
+public class FragmentB extends Fragment {
 
     private EditText editTextA;
     private EditText editTextB;
@@ -23,7 +21,7 @@ public class ActivityB extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.activity_b, container, false);
+        final View view = inflater.inflate(R.layout.Fragment_B, container, false);
         editTextA = (EditText) view.findViewById(R.id.a);
         editTextB = (EditText) view.findViewById(R.id.b);
         Button buttonAdd = (Button) view.findViewById(R.id.add);
@@ -52,7 +50,7 @@ public class ActivityB extends Fragment {
         buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new activityA();
+                Fragment fragment = new FragmentA();
                 FragmentManager fm= getFragmentManager();
                 FragmentTransaction fragmentTransaction = fm.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment, fragment);
