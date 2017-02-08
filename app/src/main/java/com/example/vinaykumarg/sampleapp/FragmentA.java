@@ -15,7 +15,7 @@ public class FragmentA extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.Fragment_A, container, false);
+        View view = inflater.inflate(R.layout.fragment_a, container, false);
         TextView textView1 = (TextView) view.findViewById(R.id.tv1);
         TextView textView2 = (TextView) view.findViewById(R.id.tv2);
         textView1.setText("Android (stylized as android) " +

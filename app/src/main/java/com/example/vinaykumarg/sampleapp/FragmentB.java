@@ -21,7 +21,7 @@ public class FragmentB extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.Fragment_B, container, false);
+        final View view = inflater.inflate(R.layout.fragment_b, container, false);
         editTextA = (EditText) view.findViewById(R.id.a);
         editTextB = (EditText) view.findViewById(R.id.b);
         Button buttonAdd = (Button) view.findViewById(R.id.add);
